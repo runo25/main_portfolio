@@ -1,0 +1,70 @@
+﻿Oruno Awhie
+FULL-STACK WEB DEVELOPER (REACT & PYTHON)
+≡ƒôì Nigeria (Open to Remote) ≡ƒô₧ +234 915 554 1159 Γ£ë∩╕Å oruno@example.com ≡ƒîÉ www.drakemarho.com ≡ƒÆ╗ github.com/oruno
+SKILLS & EXPERTISE PROFESSIONAL SUMMARY
+Results-driven Web Developer (WaaS Specialist) with over 2 years of experience
+FRONTEND
+building scalable, full-stack applications. Expert in crafting responsive, app-like user
+React.js Tailwind CSS
+interfaces with React.js and Tailwind CSS, paired with robust back-end integrations
+JavaScript (ES6+) HTML5 CSS3 using Python, Django, and Firebase. Proven track record of delivering production-ready
+PWA Development Progressive Web Apps (PWAs), optimizing deployment workflows, and building modular
+architectures for SMEs.
+BACKEND & CLOUD
+Python Django Firebase (Firestore
+PROFESSIONAL EXPERIENCE
+Auth Hosting) Render
+PythonAnywhere
+Front-End Developer 2025 ΓÇö Present
+DESIGN & TOOLS Remina App
+Adobe Photoshop Figma ΓÇó Spearheaded the front-end development of a Progressive Web Application (PWA)
+Git/GitHub CI/CD workflows dedicated to seamless photo management and media sharing.
+ΓÇó Engineered a highly responsive, app-like user interface using React, focusing on
+JSON/API Parsing
+optimized image rendering and smooth state management.
+METHODOLOGIES
+ΓÇó Collaborated with backend teams to consume APIs, ensuring cross-device
+Modular Architecture compatibility and secure media handling in a production environment.
+Website-as-a-Service (WaaS)
+Component-Driven UI Founder / Full-Stack Developer Jun 2024 ΓÇö Present
+Code and Canvas (WaaS Agency)
+ΓÇó Established a productised Website-as-a-Service (WaaS) offering targeting SMEs,
+EDUCATION
+managing end-to-end delivery from discovery to launch.
+Diploma in Computer Science ΓÇó Developed a reusable React component library and theme system, speeding up client
+Petroleum Training Institute site customization and reducing average build time by 50%.
+Sep 2021 ΓÇö May 2025 ΓÇó Maintained live deployments and monitoring on Render and PythonAnywhere,
+performing regular updates and security patches.
+Freelance Web Developer Mar 2024 ΓÇö Aug 2024
+Independent Contracts
+ΓÇó Delivered bespoke websites for local businesses including booking and portfolio
+features; responsible for design, full-stack development, and hosting.
+ΓÇó Applied Adobe Photoshop and branding skills to produce cohesive visual assets across
+multiple client web platforms.
+KEY PROJECTS & ACHIEVEMENTS
+Lois Braid
+≡ƒöù https://www.loisbraid.com
+React Tailwind CSS Python/Django
+ΓÇó Architected a dynamic, full-stack web application featuring a highly interactive frontend
+and a secure, scalable Django backend.
+ΓÇó Implemented custom API endpoints for dynamic content delivery and optimized
+frontend rendering for high Lighthouse performance scores.
+Enterprise Document Automation Engine
+≡ƒöù Internal Tool
+Python JSON Jinja2 WeasyPrint
+ΓÇó Engineered a dynamic PDF generation system capable of transforming raw JSON data
+into legally compliant, perfectly styled contracts and invoices.
+ΓÇó Automated the calculation of financial balances and multi-currency formatting,
+reducing manual drafting time by over 95%.
+Modular Hospitality Web Application
+≡ƒöù Independent Project
+React Firebase (Firestore Auth)
+ΓÇó Built a scalable web application for hotels and eateries, featuring multi-tenant
+templates and an admin dashboard for rapid property onboarding.
+ΓÇó Integrated real-time booking workflows and media galleries to improve guest
+conversion and management.
+Prime Portfolio Platform
+≡ƒöù https://primeportfolio.pythonanywhere.com
+HTML CSS Tailwind Django
+ΓÇó Built a dynamic portfolio generation platform leveraging Django to allow users to
+securely update content and manage layouts in real-time.

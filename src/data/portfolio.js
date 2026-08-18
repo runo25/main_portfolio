@@ -1,8 +1,8 @@
 // Portfolio Data - Oruno Awhie (Up to date)
 
 export const personal = {
-  name: "Oruno Awhie",
-  firstName: "Oruno",
+  name: "Orunor Awhie",
+  firstName: "Orunor",
   lastName: "Awhie",
   role: "Full-Stack Web Developer",
   specialty: "React & Python Specialist",

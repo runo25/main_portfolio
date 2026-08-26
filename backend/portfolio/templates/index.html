@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Portfolio | AI, Gaming, Design & More</title>
+    <link href="./dist/style.css" rel="stylesheet"> {# Link to your compiled Tailwind CSS #}
+    {# --- Google Fonts (Example - Choose your preference) --- #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    {# --- Font Awesome for Icons (Optional) --- #}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Custom scrollbar for a more modern feel (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a2e; /* Dark background for track */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a4a8a; /* A muted purple, adjust to your theme */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6a6aaf;
+        }
+        /* Add a subtle gradient or pattern to sections if desired */
+        body {
+            font-family: 'Roboto', sans-serif; /* Default body font */
+            background-color: #12121c; /* Darker background */
+            color: #e0e0e0; /* Light text color */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif; /* Headings font */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #8A2BE2, #4A00E0, #00BFFF); /* Example: Purple to Blue gradient */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .section-bg {
+            background-color: #1a1a2e; /* Slightly lighter section background */
+            border-radius: 1rem; /* Rounded corners for sections */
+        }
+        .card-bg {
+            background-color: #24243e; /* Card background */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-opacity-80 backdrop-blur-md bg-[#1a1a2e] sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold gradient-text hover:opacity-80 transition-opacity">[Your Name]</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+                <a href="#interests" class="text-gray-300 hover:text-white transition-colors">Interests</a>
+                <a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
+                <a href="#designs" class="text-gray-300 hover:text-white transition-colors">Designs</a>
+                <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1a1a2e] bg-opacity-95">
+            <a href="#about" class="block py-3 px-6 text-gray-300 hover:bg-purple-700 hover:text-white transition-colors">About</a>
+            <a href="#interests" class="block py-3 px-6 text-gray-300 hover:bg-purple-700 hover:text-white transition-colors">Interests</a>
+            <a href="#projects" class="block py-3 px-6 text-gray-300 hover:bg-purple-700 hover:text-white transition-colors">Projects</a>
+            <a href="#designs" class="block py-3 px-6 text-gray-300 hover:bg-purple-700 hover:text-white transition-colors">Designs</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-300 hover:bg-purple-700 hover:text-white transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style="background-image: url('https://via.placeholder.com/1920x1080/12121c/1a1a2e?text=Abstract+AI/Tech+Background');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <img src="https://via.placeholder.com/150/FFFFFF/8A2BE2?text=You" alt="Your Name" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-purple-500 shadow-xl">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Hello, I'm <span class="gradient-text">[Your Name]</span></h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                A passionate [Your Role/Aspiring Role, e.g., AI Enthusiast, Aspiring Game Developer, Full-Stack Developer] exploring the intersections of technology, creativity, and innovation.
+            </p>
+            <a href="#projects" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform hover:scale-105">View My Work</a>
+        </div>
+    </header>
+
+    <!-- Interests Section -->
+    <section id="interests" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">My Passions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI -->
+                <div class="section-bg p-8 text-center hover:shadow-2xl hover:shadow-purple-500/30 transition-shadow duration-300">
+                    <i class="fas fa-robot text-5xl text-purple-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Artificial Intelligence</h3>
+                    <p class="text-gray-400 leading-relaxed">Fascinated by machine learning, neural networks, and the future of intelligent systems. Always learning and experimenting with new AI concepts and tools.</p>
+                </div>
+                <!-- Gaming -->
+                <div class="section-bg p-8 text-center hover:shadow-2xl hover:shadow-purple-500/30 transition-shadow duration-300">
+                    <i class="fas fa-gamepad text-5xl text-purple-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Gaming</h3>
+                    <p class="text-gray-400 leading-relaxed">An avid gamer with a love for strategy and skill. Favorites include FIFA for the thrill of competition and CoD Mobile for tactical gameplay.</p>
+                </div>
+                <!-- Football (Soccer) -->
+                <div class="section-bg p-8 text-center hover:shadow-2xl hover:shadow-purple-500/30 transition-shadow duration-300">
+                    <i class="fas fa-futbol text-5xl text-purple-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Football (Soccer)</h3>
+                    <p class="text-gray-400 leading-relaxed">Passionate about the beautiful game, following [Your Favorite Team/League] and enjoying both playing and watching.</p>
+                </div>
+                <!-- Science -->
+                <div class="section-bg p-8 text-center hover:shadow-2xl hover:shadow-purple-500/30 transition-shadow duration-300">
+                    <i class="fas fa-flask text-5xl text-purple-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Science</h3>
+                    <p class="text-gray-400 leading-relaxed">Curious about the world around us, from the smallest particles to the vastness of the cosmos. Enjoy exploring physics, biology, and new scientific discoveries.</p>
+                </div>
+                <!-- Movies -->
+                <div class="section-bg p-8 text-center hover:shadow-2xl hover:shadow-purple-500/30 transition-shadow duration-300">
+                    <i class="fas fa-film text-5xl text-purple-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Movies</h3>
+                    <p class="text-gray-400 leading-relaxed">A film enthusiast appreciating diverse genres, storytelling, and cinematic art. Always on the lookout for compelling narratives and visual masterpieces.</p>
+                </div>
+                <!-- Add more if you like -->
+                 <div class="section-bg p-8 text-center hover:shadow-2xl hover:shadow-purple-500/30 transition-shadow duration-300">
+                    <i class="fas fa-code text-5xl text-purple-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Coding & Tech</h3>
+                    <p class="text-gray-400 leading-relaxed">Deeply interested in software development, web technologies, and building innovative solutions with code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Item 1 -->
+                <div class="card-bg rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://via.placeholder.com/600x400/4A00E0/FFFFFF?text=Project+Alpha" alt="Project Alpha" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Project Alpha (e.g., AI Chatbot)</h3>
+                        <p class="text-gray-400 text-sm mb-4">A brief description of the project, its purpose, and the technologies used (e.g., Python, TensorFlow, NLP).</p>
+                        <div class="flex space-x-3">
+                            <a href="#" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors"><i class="fab fa-github mr-1"></i> GitHub</a>
+                            <a href="#" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 2 -->
+                <div class="card-bg rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://via.placeholder.com/600x400/8A2BE2/FFFFFF?text=Project+Beta" alt="Project Beta" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Project Beta (e.g., Game Mod/Tool)</h3>
+                        <p class="text-gray-400 text-sm mb-4">A description of another project. Maybe a FIFA stats tracker or a utility for CoD Mobile, using specific tools or languages.</p>
+                         <div class="flex space-x-3">
+                            <a href="#" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors"><i class="fab fa-github mr-1"></i> GitHub</a>
+                            {# <a href="#" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a> #}
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 3 (Example with no live demo) -->
+                <div class="card-bg rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://via.placeholder.com/600x400/00BFFF/FFFFFF?text=Project+Gamma" alt="Project Gamma" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Project Gamma (e.g., Web App)</h3>
+                        <p class="text-gray-400 text-sm mb-4">Description of a web application project, maybe using Django and React, showcasing a particular feature.</p>
+                         <div class="flex space-x-3">
+                            <a href="#" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors"><i class="fab fa-github mr-1"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphic Designs Section -->
+    <section id="designs" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Graphic Design Showcase</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Design Item 1: Logo -->
+                <div class="card-bg rounded-xl shadow-xl overflow-hidden group relative">
+                    <img src="https://via.placeholder.com/400x300/1a1a2e/FFFFFF?text=Logo+Design+1" alt="Logo Design 1" class="w-full h-64 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Modern Tech Logo</p>
+                    </div>
+                </div>
+                <!-- Design Item 2: Flyer -->
+                <div class="card-bg rounded-xl shadow-xl overflow-hidden group relative">
+                    <img src="https://via.placeholder.com/400x300/24243e/FFFFFF?text=Flyer+Design+1" alt="Flyer Design 1" class="w-full h-64 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                     <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Event Flyer</p>
+                    </div>
+                </div>
+                <!-- Design Item 3: Logo -->
+                 <div class="card-bg rounded-xl shadow-xl overflow-hidden group relative">
+                    <img src="https://via.placeholder.com/400x300/12121c/FFFFFF?text=Logo+Design+2" alt="Logo Design 2" class="w-full h-64 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                     <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Gaming Team Logo</p>
+                    </div>
+                </div>
+                <!-- Design Item 4: Social Media Post -->
+                <div class="card-bg rounded-xl shadow-xl overflow-hidden group relative">
+                    <img src="https://via.placeholder.com/400x300/4A00E0/FFFFFF?text=Social+Media+Graphic" alt="Social Media Graphic" class="w-full h-64 object-contain p-4 transition-transform duration-300 group-hover:scale-110">
+                     <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Promotional Post</p>
+                    </div>
+                </div>
+                <!-- Add more designs -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Get In Touch</h2>
+            <form action="#" method="POST" class="section-bg p-8 md:p-12 shadow-2xl">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-300 font-medium mb-2">Full Name</label>
+                    <input type="text" name="name" id="name" class="w-full p-3 rounded-lg bg-[#24243e] border border-purple-700 focus:border-purple-500 focus:ring-purple-500 text-white outline-none" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-300 font-medium mb-2">Email Address</label>
+                    <input type="email" name="email" id="email" class="w-full p-3 rounded-lg bg-[#24243e] border border-purple-700 focus:border-purple-500 focus:ring-purple-500 text-white outline-none" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-300 font-medium mb-2">Message</label>
+                    <textarea name="message" id="message" rows="5" class="w-full p-3 rounded-lg bg-[#24243e] border border-purple-700 focus:border-purple-500 focus:ring-purple-500 text-white outline-none" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-10 rounded-lg text-lg transition-transform hover:scale-105">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e16] py-10 text-center">
+        <div class="container mx-auto px-6">
+            <div class="mb-4">
+                {# Replace with your actual social links #}
+                <a href="#" target="_blank" class="text-gray-400 hover:text-purple-400 mx-3 text-2xl transition-colors"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-purple-400 mx-3 text-2xl transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-purple-400 mx-3 text-2xl transition-colors"><i class="fab fa-twitter"></i></a>
+                {# Add others like Behance/Dribbble if you have design profiles #}
+            </div>
+            <p class="text-gray-500">© <span id="currentYear"></span> [Your Name]. All Rights Reserved.</p>
+            <p class="text-sm text-gray-600 mt-1">Building the future, one line of code (and pixel) at a time.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu after click
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

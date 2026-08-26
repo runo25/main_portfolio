@@ -63,22 +63,30 @@ export default function Footer() {
 
           {/* Quick Nav Links */}
           <div style={{ display: 'flex', gap: '1.75rem', flexWrap: 'wrap' }}>
-            {['About', 'Services', 'Works', 'Experience', 'Contact'].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase() === 'works' ? 'projects' : item.toLowerCase()}`}
-                style={{
-                  fontSize: '0.86rem',
-                  fontWeight: 500,
-                  color: 'var(--text-secondary)',
-                  transition: 'color 0.2s ease',
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-secondary)')}
-              >
-                {item}
-              </a>
-            ))}
+            {['About', 'Services', 'Works', 'Experience', 'Contact'].map((item) => {
+              const targetId = `#${item.toLowerCase() === 'works' ? 'projects' : item.toLowerCase()}`;
+              return (
+                <a
+                  key={item}
+                  href={targetId}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.querySelector(targetId)?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  style={{
+                    fontSize: '0.86rem',
+                    fontWeight: 500,
+                    color: 'var(--text-secondary)',
+                    transition: 'color 0.2s ease',
+                    touchAction: 'manipulation',
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-secondary)')}
+                >
+                  {item}
+                </a>
+              );
+            })}
           </div>
 
           {/* Socials & Back to Top */}

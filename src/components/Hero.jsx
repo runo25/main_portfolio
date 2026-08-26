@@ -82,17 +82,16 @@ export default function Hero() {
 
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                 {socials.map(({ icon: Icon, href, label }) => (
-                  <motion.a
+                  <a
                     key={label}
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    whileHover={{ scale: 1.08, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
+                    className="hero-social-btn"
                     style={{
-                      width: '36px',
-                      height: '36px',
+                      width: '38px',
+                      height: '38px',
                       borderRadius: '50%',
                       background: '#FFFFFF',
                       border: '1px solid rgba(15, 23, 42, 0.08)',
@@ -102,10 +101,11 @@ export default function Hero() {
                       color: 'var(--text-primary)',
                       boxShadow: 'var(--shadow-sm)',
                       transition: 'all 0.2s ease',
+                      touchAction: 'manipulation',
                     }}
                   >
                     <Icon size={16} />
-                  </motion.a>
+                  </a>
                 ))}
               </div>
             </div>

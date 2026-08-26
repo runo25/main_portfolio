@@ -134,12 +134,27 @@ export default function Projects() {
                     fontFamily: 'var(--font-heading)',
                     fontSize: '1.35rem',
                     fontWeight: 700,
-                    color: 'var(--text-primary)',
                     marginBottom: '0.35rem',
                     letterSpacing: '-0.02em',
                   }}
                 >
-                  {project.name}
+                  {project.url !== '#' ? (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        color: 'var(--text-primary)',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.35rem',
+                      }}
+                    >
+                      <span>{project.name}</span>
+                    </a>
+                  ) : (
+                    <span style={{ color: 'var(--text-primary)' }}>{project.name}</span>
+                  )}
                 </h3>
 
                 <p

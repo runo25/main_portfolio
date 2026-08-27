@@ -16,8 +16,8 @@ export const personal = {
   websiteDisplay: "www.drakemarho.com",
   github: "https://github.com/runo25",
   githubHandle: "github.com/runo25",
-  linkedin: "https://www.linkedin.com/in/oruno-awhie/",
-  twitter: "https://twitter.com/oruno",
+  linkedin: "https://www.linkedin.com/in/orunor-awhie-b07b171a7/",
+  twitter: "https://x.com/AwhieOruno",
 };
 
 export const skills = {

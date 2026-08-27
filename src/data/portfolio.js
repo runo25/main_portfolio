@@ -47,6 +47,7 @@ export const skills = {
 };
 
 export const categoriesPills = [
+  "Automotive & Luxury",
   "Social Platforms",
   "Fintech",
   "PWA Development",
@@ -112,6 +113,18 @@ export const experience = [
 export const projects = [
   {
     id: 1,
+    name: "Penxxaflor Atelier",
+    subtitle: "Luxury Automotive Restoration & Motorsport Engineering Platform",
+    url: "https://penxxaflor-atelier-main.vercel.app/",
+    description: "Bespoke digital platform for a luxury coachbuilding and race-engineering atelier in Buenos Aires. Features live RPM/Lambda telemetry HUDs, interactive SVG dyno curve visualizers, a 6-stage build tracking portal with CMM micrometer tolerance ledgers, and a real-time commission configurator.",
+    tech: ["React 18", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite", "Telemetry HUD"],
+    type: "Featured Platform",
+    tag: "Luxury / Automotive",
+    featured: true,
+    badge: "Live Production App",
+  },
+  {
+    id: 2,
     name: "Visible App",
     subtitle: "AI-Powered Social Copilot & Discovery Platform",
     url: "https://visibleapp.co/",
@@ -123,7 +136,7 @@ export const projects = [
     badge: "Live Platform",
   },
   {
-    id: 2,
+    id: 3,
     name: "Remina App",
     subtitle: "Progressive Web App for Photo & Media Management",
     url: "https://remina-app.com/",

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { stats } from '../data/portfolio';
 import bannerImg from '../assets/collaboration_banner.jpg';
@@ -6,6 +6,15 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 export default function Stats() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (isPaused) return;
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev === stats.length - 1 ? 0 : prev + 1));
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [isPaused]);
 
   const prevStat = () => {
     setCurrentIndex((prev) => (prev === 0 ? stats.length - 1 : prev - 1));
@@ -27,6 +36,8 @@ export default function Stats() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="stats-banner-card"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
           style={{
             position: 'relative',
             borderRadius: 'var(--radius-xl)',

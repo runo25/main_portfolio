@@ -2,7 +2,14 @@ import { motion } from 'framer-motion';
 import { personal } from '../data/portfolio';
 import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiGlobe, FiArrowRight } from 'react-icons/fi';
 
-export default function Contact() {
+export default function Contact({ onShowToast }) {
+  const handleCopyContact = (text, label) => {
+    if (navigator?.clipboard?.writeText) {
+      navigator.clipboard.writeText(text);
+      if (onShowToast) onShowToast(`✓ Copied ${label} to clipboard`);
+    }
+  };
+
   return (
     <section id="contact" className="section-pad" style={{ backgroundColor: 'var(--bg-hero)' }}>
       <div className="container">
@@ -22,7 +29,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <span className="section-label">Get In Touch</span>
+            <div className="editorial-num">05 / INITIATE DIALOGUE</div>
             <h2
               style={{
                 fontFamily: 'var(--font-heading)',
@@ -55,6 +62,7 @@ export default function Contact() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <a
                 href={`mailto:${personal.email}`}
+                onClick={() => handleCopyContact(personal.email, personal.email)}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -91,7 +99,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', textTransform: 'uppercase' }}>
-                    Email Directly
+                    Email Directly (Click to Copy)
                   </div>
                   <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                     {personal.email}
@@ -102,6 +110,7 @@ export default function Contact() {
 
               <a
                 href={`tel:${personal.phone}`}
+                onClick={() => handleCopyContact(personal.phone, personal.phone)}
                 style={{
                   display: 'flex',
                   alignItems: 'center',

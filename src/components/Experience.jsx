@@ -8,7 +8,7 @@ export default function Experience() {
       <div className="container">
         {/* Section Header */}
         <div style={{ marginBottom: '3.5rem' }}>
-          <span className="section-label">Career Journey</span>
+          <div className="editorial-num">04 / TRACK RECORD & CREDENTIALS</div>
           <h2 className="section-title">
             Experience & <br /> Education
           </h2>

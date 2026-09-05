@@ -11,7 +11,7 @@ const navLinks = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onOpenDossier }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -127,7 +127,31 @@ export default function Navbar() {
         </ul>
 
         {/* Action Button & Mobile Toggle */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', zIndex: 102 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', zIndex: 102 }}>
+          {/* Recruiter Fast-Track Pill */}
+          {onOpenDossier && (
+            <button
+              type="button"
+              onClick={onOpenDossier}
+              className="btn desktop-dossier-btn"
+              style={{
+                padding: '0.55rem 1rem',
+                fontSize: '0.8rem',
+                borderRadius: 'var(--radius-full)',
+                backgroundColor: 'rgba(15, 118, 110, 0.08)',
+                color: 'var(--accent-pine)',
+                border: '1px solid rgba(15, 118, 110, 0.2)',
+                fontWeight: 700,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+              }}
+            >
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: 'var(--accent-pine)' }} />
+              <span>Dossier</span>
+            </button>
+          )}
+
           <a
             href={`mailto:${personal.email}`}
             className="btn btn-white desktop-cta"
@@ -248,7 +272,33 @@ export default function Navbar() {
                   </a>
                 </li>
               ))}
-              <li style={{ paddingTop: '1rem' }}>
+              <li style={{ paddingTop: '1rem', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                {onOpenDossier && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      onOpenDossier();
+                    }}
+                    className="btn btn-white"
+                    style={{
+                      width: '100%',
+                      padding: '0.85rem',
+                      fontSize: '0.95rem',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '0.5rem',
+                      border: '1px solid rgba(15, 118, 110, 0.3)',
+                      color: 'var(--accent-pine)',
+                      fontWeight: 700,
+                    }}
+                  >
+                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: 'var(--accent-pine)' }} />
+                    <span>Open 60s Recruiter Dossier</span>
+                  </button>
+                )}
+
                 <a
                   href={`mailto:${personal.email}`}
                   onClick={() => setMobileMenuOpen(false)}

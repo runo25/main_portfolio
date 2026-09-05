@@ -22,6 +22,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
+            <div className="editorial-num">01 / PHILOSOPHY & PERSPECTIVE</div>
             <h2
               style={{
                 fontFamily: 'var(--font-heading)',

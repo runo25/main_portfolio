@@ -148,7 +148,7 @@ export const projects = [
     badge: "Production App",
   },
   {
-    id: 3,
+    id: 4,
     name: "Lois Braid",
     subtitle: "Dynamic E-Commerce & Service Booking Platform",
     url: "https://www.loisbraid.com",
@@ -160,7 +160,7 @@ export const projects = [
     badge: "Live Client Site",
   },
   {
-    id: 4,
+    id: 5,
     name: "Enterprise Document Automation Engine",
     subtitle: "High-Precision Financial PDF & Contract Compiler",
     url: "https://github.com/runo25/format",
@@ -172,7 +172,7 @@ export const projects = [
     badge: "Internal Engine",
   },
   {
-    id: 5,
+    id: 6,
     name: "Modular Hospitality Platform",
     subtitle: "Multi-Tenant Hospitality & Reservation System",
     url: "https://github.com/runo25",
@@ -184,7 +184,7 @@ export const projects = [
     badge: "SaaS Platform",
   },
   {
-    id: 6,
+    id: 7,
     name: "Prime Portfolio Platform",
     subtitle: "Dynamic Content-Managed Portfolio Generator",
     url: "https://primeportfolio.pythonanywhere.com",

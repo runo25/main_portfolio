@@ -33,7 +33,7 @@ export default function Services() {
           className="services-header-grid"
         >
           <div>
-            <span className="section-label">Capabilities</span>
+            <div className="editorial-num">02 / CORE CAPABILITIES</div>
             <h2
               style={{
                 fontFamily: 'var(--font-heading)',
